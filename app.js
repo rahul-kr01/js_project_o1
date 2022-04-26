@@ -34,4 +34,10 @@ let details = data.map(function(item){
     return '<div>' + item.name + ' is ' + item.age + ' years old '+'</div>'
 });
 
-info.innerHTML = details.join('\n');
+document.getElementById("demo").onclick = function() {myFunction()};
+//document.getElementById("demo").addEventListener("click", myFunction);
+
+function myFunction(){
+    info.innerHTML = details.join('\n');
+}
+// info.innerHTML = details.join('\n');
