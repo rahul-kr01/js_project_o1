@@ -34,6 +34,17 @@ let details = data.map(function(item){
     return '<div>' + item.name + ' is ' + item.age + ' years old '+'</div>'
 });
 
+const btn = document.getElementById('demo');
+
+btn.addEventListener('click', () => {
+  // 👇️ hide button
+  btn.style.display = 'none';
+
+  // 👇️ show div
+  const box = document.getElementById('box');
+  box.style.display = 'block';
+});
+
 document.getElementById("demo").onclick = function() {myFunction()};
 //document.getElementById("demo").addEventListener("click", myFunction);
 
