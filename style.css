@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,5 +11,24 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info div {
+    padding: 3rem;
+    background-color: rgb(81, 50, 219);
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#clicked {
+    background-color: rgb(209, 165, 100);
 }
 
